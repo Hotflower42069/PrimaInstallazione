@@ -1,0 +1,15 @@
+body {
+	max-width: 650px;
+}
+
+.header-logo {
+	width: 120px;
+}
+
+.app-icon {
+	width: 32px;
+}
+
+.action-button {
+	width: fit-content;
+}

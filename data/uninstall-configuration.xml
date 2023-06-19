@@ -1,0 +1,12 @@
+<Configuration>
+  <Display Level="None" AcceptEULA="TRUE"/>
+  <Remove>
+    <Product ID="O365HomePremRetail">
+      <Language ID="en-us"/>
+      <Language ID="nl-nl"/>
+      <Language ID="de-de"/>
+      <Language ID="it-it"/>
+      <Language ID="fr-fr"/>
+    </Product>
+  </Remove>
+</Configuration>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prima installazione</title>
+		<link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="/eel.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body class="pt-3 ps-4 m-auto user-select-none bg-light">
+		<div class="bg-white shadow-lg rounded-4 border border-2 p-4 mt-4">
+			<!-- Header -->
+			<div class="pt-2 pb-3 border-bottom d-flex align-items-center">
+				<img src="img/saidea.svg" alt="Saidea" class="header-logo me-4">
+				<div class="d-grid border-start border-secondary ps-4">
+					<span class="fs-4">Prima installazione</span>
+					<small class="text-secondary">Applicazione che gestice la prima installazione</small>
+				</div>
+			</div>
+
+			<!-- Application list -->
+			<div class="mt-4 mb-5">
+				<span class="fs-5 fw-semibold mb-2 d-grid">Applicazioni da installare:</span>
+				<div class="d-grid gap-3">
+					<!-- Google Chrome -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="google_chrome" data-screen-name="Google Chrome" data-package-name="googlechrome">
+						<label class="form-check-label d-flex align-items-center" for="google_chrome">
+							<img src="img/google_chrome.svg" alt="Google Chrome" class="app-icon me-2">
+							<span>Google Chrome</span>
+						</label>
+					</div>
+
+					<!-- Mozilla Firefox -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="mozilla_firefox" data-screen-name="Mozilla Firefox" data-package-name="firefox">
+						<label class="form-check-label d-flex align-items-center" for="mozilla_firefox">
+							<img src="img/mozilla_firefox.svg" alt="Mozilla Firefox" class="app-icon me-2">
+							<span>Mozilla Firefox</span>
+						</label>
+					</div>
+
+					<!-- 7-Zip -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="7_zip" data-screen-name="7-Zip" data-package-name="7zip">
+						<label class="form-check-label d-flex align-items-center" for="7_zip">
+							<img src="img/7_zip.svg" alt="7-Zip" class="app-icon me-2">
+							<span>7-Zip</span>
+						</label>
+					</div>
+
+					<!-- Adobe Acrobat Reader DC -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="adobe_reader" data-screen-name="Adobe Acrobat Reader DC" data-package-name="adobereader">
+						<label class="form-check-label d-flex align-items-center" for="adobe_reader">
+							<img src="img/adobe_reader.svg" alt="Adobe Acrobat Reader DC" class="app-icon me-2">
+							<span>Adobe Acrobat Reader DC</span>
+						</label>
+					</div>
+
+					<!-- VLC media player -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="vlc" data-screen-name="VLC media player" data-package-name="vlc">
+						<label class="form-check-label d-flex align-items-center" for="vlc">
+							<img src="img/vlc.svg" alt="VLC media player" class="app-icon me-2">
+							<span>VLC media player</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- Other options -->
+			<div class="mt-4 mb-5">
+				<span class="fs-5 fw-semibold mb-2 d-grid">Altre opzioni:</span>
+				<div class="d-grid gap-3">
+					<!-- Uninstall Office products -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="uninstall_office">
+						<label class="form-check-label d-flex align-items-center" for="uninstall_office">
+							<img src="img/office.svg" alt="Microsoft Office" class="app-icon me-2">
+							<span>Disinstallare i prodotti Microsoft Office</span>
+						</label>
+					</div>
+
+					<!-- Disable Windows Hello for Business autoprovisioning -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="windows_hello">
+						<label class="form-check-label d-flex align-items-center" for="windows_hello">
+							<img src="img/windows_hello.png" alt="Windows Hello for Business" class="app-icon me-2">
+							<span>Disabilitare il provisioning automatico di Windows Hello for Business</span>
+						</label>
+					</div>
+
+					<!-- Download and install Windows Updates -->
+					<div class="form-check d-flex align-items-center gap-2">
+						<input class="form-check-input" type="checkbox" id="windows_updates">
+						<label class="form-check-label d-flex align-items-center" for="windows_updates">
+							<img src="img/windows_update.svg" alt="Aggiornamenti di Windows" class="app-icon me-2">
+							<span>Scaricare e installare gli aggiornamenti di Windows</span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- Buttons -->
+			<div class="text-center d-flex flex-column align-items-center gap-4 mb-3">
+				<!-- Start button -->
+				<button id="start" type="button" class="action-button btn btn-primary text-center">
+					<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" hidden></span>
+					<span class="text">Avvia</span>
+				</button>
+
+				<!-- Log -->
+				<button id="log" type="button" class="action-button btn btn-sm btn-secondary text-center" hidden>
+					<i class="bi bi-file-earmark-arrow-down"></i>
+					<span class="text">Scarica Log</span>
+				</button>
+			</div>
+		</div>
+  </body>
+</html>
